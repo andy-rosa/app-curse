@@ -6,9 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "npx eslint src/**/*.{ts,tsx}",
-    "lint:fix": "npx eslint src/**/*.{ts,tsx} --fix",
-    "lint:css": "npx stylelint \"**/*.css\""
+    "lint:ts": "npx eslint src/**/*.{ts,tsx}",
+    "lint:ts:fix": "npx eslint src/**/*.{ts,tsx} --fix",
+    "lint:css": "npx stylelint \"**/*.css\"",
+    "lint:css:fix": "npx stylelint \"**/*.css\" --fix"
   },
   "dependencies": {
     "next": "13.2.0",
