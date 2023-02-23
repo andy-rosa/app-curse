@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "npx eslint src/**/*.{ts,tsx}",
-    "lint:fix": "npx eslint src/**/*.{ts,tsx} --fix"
+    "lint:fix": "npx eslint src/**/*.{ts,tsx} --fix",
+    "lint:css": "npx stylelint \"**/*.css\""
   },
   "dependencies": {
     "next": "13.2.0",
@@ -25,6 +26,10 @@
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
+    "stylelint": "^15.2.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-order": "^6.0.2",
     "typescript": "^4.9.5"
   }
 }
