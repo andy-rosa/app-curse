@@ -1,0 +1,60 @@
+.button {
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.primary {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+}
+
+.primary:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary-hover);
+    border: none;
+}
+
+.primary svg{
+    fill: var(--color-white);
+}
+
+.outline {
+    color: var(--color-black);
+    background: none;
+    border: 1px solid var(--border-color);
+}
+
+.outline:hover {
+    background: var(--color-gray);
+    border: 1px solid var(--color-gray);
+}
+
+/* Иконка - стрелка */
+.arrow {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.up {
+    transform: rotate(-90deg);
+}
+
+.left {
+    transform: rotate(0deg);
+}
+
+.down {
+    transform: rotate(90deg);
+}
+
+.right {
+    transform: rotate(180deg);
+}

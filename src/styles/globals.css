@@ -2,12 +2,16 @@
 /* Color */
   --color-black: #3B434E;
   --color-white: #fff;
-  --color-primary: #7653FC;
+  --color-primary: #5a38e3;
+  --color-primary-hover: #3a1dba;
+  --color-gray: #BBB;
+  --color-active-gray: #B3C0D9;
   --color-secondary: #1DC37E;
   --color-secondary-light: #C8F8E4;
   --color-secondary-inverted: #FC836D;
   --bg-color: #F5F6F8;
   --bg-modal-color: #F9F8FF;
+  --border-color: #EBEBEB;
 
 /* Fonts */
   --font: "Noto Sans", sans-serif;

@@ -1,0 +1,20 @@
+.paragraph {
+    display: block;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.small {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.normal {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.large {
+    font-size: 18px;
+    line-height: 29px;
+}
