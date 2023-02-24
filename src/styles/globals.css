@@ -1,6 +1,16 @@
 :root {
-  --color-black: #333;
+/* Color */
+  --color-black: #3B434E;
   --color-white: #fff;
+  --color-primary: #7653FC;
+  --color-secondary: #1DC37E;
+  --color-secondary-light: #C8F8E4;
+  --color-secondary-inverted: #FC836D;
+  --bg-color: #F5F6F8;
+  --bg-modal-color: #F9F8FF;
+
+/* Fonts */
+  --font: "Noto Sans", sans-serif;
 }
 
 
@@ -18,7 +28,7 @@ body {
 
 body {
   color: var(--color-black);
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--font);
 }
 
 a {
