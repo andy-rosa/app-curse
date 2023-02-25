@@ -1,4 +1,3 @@
-import { type ReactNode } from 'react'
 import { type HtagProps } from './Htag.props'
 import cls from './Htag.module.css'
 

@@ -12,15 +12,15 @@ export function Tag (props: TagProps): JSX.Element {
   } = props
 
   return (
-        <div
-            className={cn(cls.tag, cls[theme], cls[size])}
-        >
-            {
-                (href != null)
-                  ? <a href={href}>{children}</a>
-                  : <>{ children }</>
-            }
-        </div>
+    <div
+      className={cn(cls.tag, cls[theme], cls[size])}
+    >
+      {
+        (href != null)
+          ? <a href={href}>{children}</a>
+          : <>{ children }</>
+      }
+    </div>
   )
 }
 

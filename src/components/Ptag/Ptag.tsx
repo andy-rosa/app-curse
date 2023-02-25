@@ -10,11 +10,11 @@ export function Ptag (props: PtagProps): JSX.Element {
     ...otherProps
   } = props
   return (
-        <p
-            className={cn(cls.paragraph, cls[size])}
-            {...otherProps}
-        >
-            {children}
-        </p>
+    <p
+      className={cn(cls.paragraph, cls[size])}
+      {...otherProps}
+    >
+      {children}
+    </p>
   )
 }

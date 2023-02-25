@@ -19,6 +19,16 @@ module.exports = {
   ],
   rules: {
     'react/react-in-jsx-scope': 'off',
-    'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }]
+    'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }],
+    '@typescript-eslint/triple-slash-reference': 'off',
+    indent: [
+      'error',
+      2,
+      {
+        SwitchCase: 1
+      }
+    ],
+    '@typescript-eslint/indent': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off'
   }
 }
