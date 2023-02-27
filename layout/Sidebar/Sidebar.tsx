@@ -3,9 +3,9 @@ import { type SidebarProps } from './Sidebar.props'
 import cn from 'classnames'
 import cls from './Sidebar.module.css'
 
-const Sidebar = ({ children }: SidebarProps): JSX.Element => {
+const Sidebar = ({ children, className }: SidebarProps): JSX.Element => {
   return (
-    <aside className={cn(cls.sidebar)}>
+    <aside className={cn(className, cls.sidebar)}>
       {children}
     </aside>
   )

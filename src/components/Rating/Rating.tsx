@@ -13,7 +13,7 @@ export function Rating (props: RatingProps): JSX.Element {
     setRating
   } = props
 
-  const [ratingArray, setRatingArray] = useState<JSX.Element[]>(new Array(MAX_RATING).fill(<></>))
+  const [ratingArray, setRatingArray] = useState<JSX.Element[]>([])
 
   const clickRatingHandler = (rating: number): void => {
     if (!isEditable || !setRating) {
@@ -37,25 +37,28 @@ export function Rating (props: RatingProps): JSX.Element {
   }
 
   const constructRating = (currentRating: number): void => {
-    const updatedArray = ratingArray.map((star: JSX.Element, i: number) => (
-      <span
-        key={i}
-        className={
-          cn(cls.rating, {
-            [cls.filled]: i < currentRating,
-            [cls.editable]: isEditable
-          })
-        }
-        onMouseEnter={() => { changeDisplayRating(i + 1) }}
-        onMouseLeave={() => { changeDisplayRating(rating) } }
-        onClick={() => { clickRatingHandler(i + 1) }}
-      >
-        < StarIcon
-          tabIndex={isEditable ? 0 : -1}
-          onKeyDown={(evt: KeyboardEvent<SVGElement>) => { keydownRatingHandler(evt, i + 1) }}
-        />
-      </span>
-    ))
+    const updatedArray = []
+    for (let i = 0; i < MAX_RATING; i++) {
+      updatedArray.push((
+        <span
+          key={i}
+          className={
+            cn(cls.rating, {
+              [cls.filled]: i < currentRating,
+              [cls.editable]: isEditable
+            })
+          }
+          onMouseEnter={() => { changeDisplayRating(i + 1) }}
+          onMouseLeave={() => { changeDisplayRating(rating) } }
+          onClick={() => { clickRatingHandler(i + 1) }}
+        >
+          < StarIcon
+            tabIndex={isEditable ? 0 : -1}
+            onKeyDown={(evt: KeyboardEvent<SVGElement>) => { keydownRatingHandler(evt, i + 1) }}
+          />
+        </span>
+      ))
+    }
     setRatingArray(updatedArray)
   }
 

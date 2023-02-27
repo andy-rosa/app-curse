@@ -3,4 +3,5 @@ import { type ReactNode } from 'react'
 
 export interface SidebarProps extends React.HTMLProps<HTMLDivElement> {
     children: ReactNode
+    className?: string
 }

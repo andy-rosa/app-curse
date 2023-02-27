@@ -1,6 +1,5 @@
 import { type LayoutProps } from './Layout.props'
 import cls from './Layout.module.css'
-import cn from 'classnames'
 import Header from './Header/Header'
 import Sidebar from './Sidebar/Sidebar'
 import Footer from './Footer/Footer'
@@ -12,14 +11,14 @@ function Layout (props: LayoutProps): JSX.Element {
   } = props
 
   return (
-    <>
-      <Header>header</Header>
-      <main className={cn(cls.layout)}>
-        <Sidebar>Sidebar</Sidebar>
+    <div className={cls.layout}>
+      <Header className={cls.header}>header</Header>
+      <Sidebar className={cls.sidebar}>Sidebar</Sidebar>
+      <main className={cls.content}>
         {children}
       </main>
-      <Footer>Footer</Footer>
-    </>
+      <Footer className={cls.footer}>Footer</Footer>
+    </div>
   )
 }
 
