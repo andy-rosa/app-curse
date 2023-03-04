@@ -29,6 +29,7 @@ module.exports = {
       }
     ],
     '@typescript-eslint/indent': 'off',
-    '@typescript-eslint/strict-boolean-expressions': 'off'
+    '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/restrict-plus-operands': 'off'
   }
 }
