@@ -17,7 +17,7 @@ function Layout (props: LayoutProps): JSX.Element {
       <main className={cls.content}>
         {children}
       </main>
-      <Footer className={cls.footer}>Footer</Footer>
+      <Footer className={cls.footer} />
     </div>
   )
 }
